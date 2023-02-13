@@ -1,0 +1,30 @@
+{% if messages %}
+  {% for message in messages %}
+    <!-- <div class="alert alert-dismissible alert-success">
+      <button type="button" class="close" data-dismiss="alert">
+      
+      </button>
+      <strong>{{message}}</strong>
+    </div> -->
+    <!-- {% if message.tags == 'success'%}
+                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
+            {% elif message.tags == 'info' %}
+                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
+            {% elif message.tags == 'warning' %}
+                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
+            {% elif message.tags == 'error' %}
+                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
+            {% endif %} -->
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                  <strong>{{message}}</strong>
+              </div>
+            </div>
+ {% endfor %}
+{% endif %}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- fontawsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <title>BLOG</title>
+</head>
+<body>
+ 
+    <nav class="site-nav mb-5">
+        <!-- {% include 'messages.html' %} -->
+        <div class="container">
+            <div class="row">
+              <!-- <div class="col-md-3">
+                  <form action="#" method="POST" class="form-style">
+                      {% csrf_token %}
+                      <span class="form-icon">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </span>
+                      <input type="search" name="search" placeholder="search..." >
+                      
+                  </form>
+              </div> -->
+                <div class="col-lg-6 col-md-4 text-uppercase logo">magdesign</div>
+              
+                <div class="col-lg-4 col-md-4">
+                    <div class="d-flex">
+                        <ul class="list-unstyled mb-0 ms-auto me-4 align-self-center">
+                            <li class="social">
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="{% url 'logout' %}">
+                            <button class="btn btn-danger ms-2">Logout</button>
+                        </a>
+                    </div>  
+                </div>
+                    
+                <div class="col-lg-2 col-md-4 text-center align-self-center p-0" >
+                      <!-- offcanvas slide  -->
+                    <a class="menubar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+
+                    <div class="offcanvas offcanvas-end off_css" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                          <!-- <button type="button" class="btn-close  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-uppercase logo2" id="offcanvasExampleLabel">magdesign</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="dropdown mt-3">
+                                <ul class="list-unstyled">
+                                    <li class="text_css"><a class="dropdown-item" href="/home">Home</a></li>
+                                    <li class="text_css"><a class="dropdown-item" href="/blog">Blog</a></li>
+                                    <li class="text_css"><a class="dropdown-item" href="/all_blog">View all blogs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container main_form">
+        <h1>{{ request.user.username }} edit your Blog .</h1>
+        <div class="row">
+            <div class="form_div">
+                <form method="POST" enctype='multipart/form-data'>
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label>Post title</label>
+                        {{form.Title}}
+                    </div>
+                    <div class="form-group">
+                        
+                        {{form.user}}
+                    </div>
+                    <div class="form-group">
+                        <label>Image for blog</label>
+                        {{form.Blog_img}}
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block">Description</label>
+                        {{form.Description}}
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block">Enter your thoughts</label>
+                        {{form.Blog_txt}}
+                    </div>
+                    <div class="form-group">
+                        <label>Publish Date</label>
+                        {{form.Date}}
+                    </div>
+                    
+                    <button type="submit" class="btn btsuccess mt-3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var name="{{user.id}}";
+        document.getElementById('auth_ip').value=name;
+    </script> 
+</body>
+</html>

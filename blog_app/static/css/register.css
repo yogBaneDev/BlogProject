@@ -1,0 +1,146 @@
+body{
+    background-color: #460C68;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px 0px;
+}
+/* main-div  */
+.register_cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F56EB3; */
+    /* padding: 20px 0px; */
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin: 0px auto;
+    color: #fff;
+    padding: 20px 30px;
+    background-color: #CB1C8D;
+}
+
+.text1{
+    font-weight: bold;
+}
+
+.text2{
+    color: #7F167F;
+    font-weight: bold;
+}
+
+.btn1{
+    background-color: #7F167F;
+    border-radius: 10px;
+    border: 2px solid #7F167F;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    /* color: white; */
+    box-shadow: 2px 2px 15px #F56EB3;
+}
+
+.btn1 a{
+    text-decoration: none !important;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+.register-info{
+    background-color: #F56EB3;
+    padding: 20px 30px;
+}
+
+.btn2{
+    background-color: #7F167F;
+    border-radius: 10px;
+    border: 2px solid #7F167F;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    /* box-shadow: 3px 4px 10px #CB1C8D; */
+    box-shadow: 2px 2px 15px #CB1C8D;
+    display: block !important;
+}
+
+/* form span{
+    display: none;
+} */
+
+form ul{
+    display: none;
+}
+
+form label{
+    display: block;
+    color: #0f0f0f;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* form .form-control{
+    width: 50%;
+} */
+
+form .form-detailsf{
+    display: inline;   
+}
+
+form .form-detailsl{
+    display: inline;   
+}
+
+input{
+    /* display: block; */
+    background-color: #7F167F;
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: #7F167F;    
+    color: white;
+    font-size: 16px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+input:focus{
+    background-color: #7F167F;
+}
+
+form .form-control{
+    background-color: #7F167F;
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: #7F167F;    
+    color: white;
+    font-size: 16px;
+    width: 50%;
+}
+
+form .form-control:focus {
+    /* border-color: white; */
+    background-color: #7F167F;
+    /* outline: 0; */
+    color: white;
+    /* border: 2px solid none; */
+}
+
+
+form .form-control::placeholder{
+    color: #F56EB3;
+}
+
+input::placeholder{
+    color: #F56EB3;
+}

@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5D9B6 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site-nav{
+    padding: 20px 0px;
+    background-color: #A4BE7B;
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 200;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* margin-bottom: 50px; */
+}
+
+
+
+.logo{
+    font-size: 30px !important;
+    font-weight: bold !important;
+    color: #285430;
+}
+
+.logo2{
+    font-size: 30px !important;
+    font-weight: bold !important;
+    color: #285430;
+}
+
+
+input{
+    width: 50%;
+    outline: 0;
+    border-width: 0 0 2px;
+    /* border-radius: 7px; */
+    background-color: #A4BE7B;
+    border-color: #285430;
+    padding: 3px 7px;
+    /* color: #285430; */
+    font-size: 20px;
+}
+
+input:focus {
+    /* border-color: #285430; */
+    /* background-color: #5F8D4E; */
+    background-color: #A4BE7B;
+    color: #E5D9B6;
+    border-radius: 10px;
+}   
+
+input::placeholder{
+    font-size: 20px;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.btsuccess{
+    background-color: #285430;
+    font-size: 18px;
+    color: #E5D9B6;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btsuccess:hover{
+    color: #E5D9B6;
+}
+
+.social{
+    display: inline-block;
+    padding: 0px 10px;
+    
+}
+
+.social a i{
+    color: black;
+}
+
+.btn-danger{
+    font-size: 18px !important;
+    font-weight: bolder;background-color: #dc3545 !important;
+    border-color: #dc3545;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: white !important;
+}
+
+.btn-danger:hover{
+    color: white !important;
+}
+
+.menubar i{
+    font-size: 30px;
+    color: black;
+    float: right;
+}
+
+
+span{
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.off_css{
+    background-color: #A4BE7B;
+    border-radius: 7px;
+}
+
+.text_css a{
+    background-color: #5F8D4E;
+    color: #E5D9B6 !important;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.text_css:hover a{
+    background-color: #285430 !important;
+}
+
+.btn{
+    background-color: #5F8D4E;
+    color: #E5D9B6;
+    font-weight: 600 !important;
+    font-size: 16px;
+}
+
+.btn:hover{
+    color: #285430;
+}
+
+a{
+    text-decoration: none;
+    color: #E5D9B6;
+}
+
+a:hover{
+    color: #285430;
+}
+
+.main{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 35px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+span{
+    font-size: 18px;
+    color: #285430;
+}

@@ -1,0 +1,82 @@
+body{
+    background-color: #D989B5;
+    font-family: 'Poppins', sans-serif;
+    /* color: #8FE3CF; */
+}
+.login-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    /* padding: 20px; */
+}
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: whitesmoke;
+}
+h2{
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #863A6F;
+}
+
+.form_css{
+    padding: 20px;
+    background-color: #975C8D;
+    border-radius: 7px;
+}
+
+form p{
+    font-size: 20px !important;
+    margin: 20px 0px;
+    font-weight: bold !important;
+}
+
+p{
+    margin: 30px auto 0px; 
+    font-size: 20px !important;
+}
+input{
+    background-color: #975C8D;
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: #863A6F;    
+    color: white;
+    font-size: 20px;
+}
+
+input:focus {
+    border-color: #863A6F;
+    /* border-color: white; */
+}
+
+.btn{
+    background-color: #863A6F;
+    border-radius: 10px;
+    border: 2px solid #863A6F;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 3px 4px 9px #975C8D;
+}
+.btn:hover{
+    /* background-color: #863A6F; */
+    color: white;
+}
+
+form button{
+    display: block !important;
+    margin: auto;
+    margin-top: 30px !important;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
